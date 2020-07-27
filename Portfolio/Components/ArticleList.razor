@@ -1,0 +1,22 @@
+﻿@using Microsoft.AspNetCore.Components.Web
+@using Portfolio.Models
+@using Portfolio.Services
+@using Portfolio.Controllers
+@inject JsonFileArticleService ArticleService
+
+<div class="card-columns">
+    @foreach (Article article in ArticleService.GetArticles())
+    {
+        <div class="card">
+            <img class="card-img-top" src='@ArticleService.ArticleImage(article)' alt="No image" />
+            <div class="card-body">
+                <h5 class="card-title">@article.Title</h5>
+                <p class="card-text">@article.Description</p>
+                <a href="Articles/@article.Id" class="btn stretched-link">View Article</a>
+            </div>
+        </div>
+    }
+</div>
+
+@code {
+}

@@ -1,0 +1,43 @@
+﻿@using Portfolio.Components
+@using Portfolio.Models
+@using Portfolio.Services
+@inject JsonFileArticleService ArticleService
+@{
+    ViewData["Title"] = "Sam Matthews";
+    var topArticles = ViewData["TopArticles"] as IEnumerable<Article>;
+}
+
+<div class="text-center">
+    <h1 class="display-4">Portfolio and Projects</h1>
+    <h5>
+        This website is both a stab at creating something in ASP.NET as well as introducing a way to show off projects without resorting to GitHub READMES.
+    </h5>
+</div>
+
+<div id="topArticles" class="carousel slide" data-ride="carousel">
+    <ul class="carousel-indicators">
+        @for(int i = 0; i < topArticles.Count(); i++)
+        {
+            var active = i == 0 ? "active" : "";
+            <li data-target="#topArticles" data-slide-to="@i" class="@active"/>
+        }
+    </ul>
+    <div class="carousel-inner">
+        @for (int i = 0; i < topArticles.Count(); i++)
+        {
+            Article article = topArticles.ElementAt(i);
+            var active = i == 0 ? "active" : "";
+            <div class="carousel-item @active">
+                <a href="Articles/@article.Id">
+                    <img class="d-block w-100 img-fluid" src="@ArticleService.ArticleImage(article)" alt="Article">
+                </a>
+            </div>
+        }
+    </div>
+    <a class="carousel-control-prev" href="#topArticles" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#topArticles" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </a>
+</div>

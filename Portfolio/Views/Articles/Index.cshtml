@@ -1,0 +1,11 @@
+﻿@using Portfolio.Components
+@{
+    ViewData["Title"] = "Articles";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Articles</h1>
+
+@(await Html.RenderComponentAsync<ArticleList>(RenderMode.ServerPrerendered))
+
+<script src="_framework/blazor.server.js"></script>

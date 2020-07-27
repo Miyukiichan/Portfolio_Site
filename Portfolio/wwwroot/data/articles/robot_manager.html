@@ -1,0 +1,33 @@
+﻿<p>
+    This was my final year project in university and is all about managing large mobile robots in a safe and convenient way. 
+    The software was designed to run run on robots such as <a href="https://www.aber.ac.uk/en/cs/research/ir/robots/idris/">Idris</a> but could run on any Linux system using ROS (Robotics Operating System).
+    More information as well as the source code can be found <a href="https://github.com/Miyukiichan/robot_manager">here</a>
+</p>
+<h2>Problem</h2>
+<p>
+    One of the main issue when working with these robots was located in the workflow of setting them up, connecting to them and monitoring them remotely.
+    This required the use of a laptop as well as a reliable connection to the unit which is not always possible during operation.
+    Additionally, Idris already has an onboard screen and keyboard that lets the user interact with a Linux shell.
+    However, running several tasks in this environment either requires the need for specialised tools or logging in to TTY sessions several times.
+</p>
+<h2>Solution</h2>
+<p>
+    The proposed solution to this issue was to create a text based application designed to manage predefined configurable processes as well as control and monitor the robot using ROS.
+    This was done in C++ using ncurses.
+    The user can select a process to run from a menu which will get its own tab in the tab bar. 
+    They can then switch between these tabs to view the output in the main output area of the screen.
+    <br><br>
+    Interaction can be performed using a keyboard, mouse or touch screen.
+    The user can then kill running processes which will terminate in a safe manner.
+    There is also the option to control the robot itself and view safety/status information. 
+    This is useful when loading the robot for transportation.
+</p>
+<h2>Conclusion</h2>
+<p>
+    This was possibly the most fun and interesting projects I have ever done.
+    It coincided with everything I was interested in at the time.
+    It touched on robotics, workflow efficiency and UX, Linux sysadmin as well as TUI interfaces.
+    <br><br>
+    I was able to learn how to plan effectively as well as change the course of the design per the client's needs in an agile manner.
+    Overall, while I think I could have done better in hindsight and with more experience now, the resulting application got the job done and was certainly very useful and unique.
+</p>
