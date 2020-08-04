@@ -1,11 +1,34 @@
 ﻿<p>
 	The website you are currently viewing evolved from my effort to learn C# as well as the rest of the Microsoft stack.
 	While, I already had some experience with making HTML pages, my experience was more involved with desktop applications, TUI's and robotics.
-	Nevertheless, I thought it important to learn these newer technologies due to their prevalence and desirability.
+	Nevertheless, I thought it important to learn these newer technologies due to their prevalence and desirability in the industry.
 	Plus, I wanted a better (and more customisable) way to show existing and future works and not just use sites like GitHub.
 </p>
 <p>
 	The source code for the site can be found <a href="https://github.com/Miyukiichan/Portfolio_Site">here</a>.
+</p>
+<h2>Process</h2>
+<p>
+	I initially started following along with the <a href="https://www.youtube.com/playlist?list=PLdo4fOcmZ0oW8nviYduHq7bmKode-p8Wy">Official Microsoft tutorial on ASP.NET</a> to get to grips with the fundamentals.
+	From there I decided to use the site as a portfolio homepage so that there was more purpose in what was being developed.
+	As this is a personal website, the backend for writing articles does not need to be fool proof or extremely fleshed out.
+	I did however want an easy way to add new articles without having to rebuild the app or duplicate any html code.
+</p>
+<p>
+	The approach that was taken was to represent articles with JSON and to render html files as strings in the middle of a view along with relevant information.
+	This allows the article administrator to simply write the main html content of the article and add it dynamically to the JSON database.
+	This also allows for the system to be expanded to use a database such as SQL server with minimal code changes to the front end.
+</p>
+<h2>Issues</h2>
+<p>
+	One major setback I had was sending articles to the article view page to be displayed. 
+	This was because I didn't know about MVC and how dynamic routing can be used to display different information.
+	From there I learned that using the article ID as part of the URL can define what content to display on the page.
+</p>
+<p>
+	Another issue is actually to do with the current hosting solution of the site.
+	It is currently hosted on Azure using the free hosting service which is abominably slow.
+	In future, I will either switch the hosting plan or research how to host an ASP.NET app on a personal server.
 </p>
 <h2>Technologies Learned:</h2>
 <p>

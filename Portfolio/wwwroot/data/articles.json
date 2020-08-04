@@ -14,6 +14,13 @@
     "Description": "Website written in C# to act as a portfolio of existing and future projects"
   },
   {
+    "Id": "js-todo-list",
+    "Image": "js-todo-list.png",
+    "ArticleFile": "js-todo-list",
+    "Title": "JavaScript Todo List",
+    "Description": "Small todo list project to learn JS and practice SASS"
+  },
+  {
     "Id": "robot_manager",
     "Image": "Monitor.png",
     "ArticleFile": "robot_manager",
