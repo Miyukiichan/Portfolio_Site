@@ -7,11 +7,11 @@
     "Description": "An Ncurses file manager written in C"
   },
   {
-    "Id": "portfolio_site",
-    "Image": "portfolio.png",
-    "ArticleFile": "portfolio_site",
-    "Title": "Portfolio Site",
-    "Description": "Website written in C# to act as a portfolio of existing and future projects"
+    "Id": "self-hosting-site",
+    "Image": "self-hosting-site.png",
+    "ArticleFile": "self-hosting-site",
+    "Title": "Self hosting portfolio website",
+    "Description": "Moving away from Azure for the sake of cost and speed"
   },
   {
     "Id": "js-todo-list",
@@ -19,6 +19,13 @@
     "ArticleFile": "js-todo-list",
     "Title": "JavaScript Todo List",
     "Description": "Small todo list project to learn JS and practice SASS"
+  },
+  {
+    "Id": "portfolio_site",
+    "Image": "portfolio.png",
+    "ArticleFile": "portfolio_site",
+    "Title": "Portfolio Site",
+    "Description": "Website written in C# to act as a portfolio of existing and future projects"
   },
   {
     "Id": "robot_manager",

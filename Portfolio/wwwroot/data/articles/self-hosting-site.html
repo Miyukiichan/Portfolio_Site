@@ -1,0 +1,31 @@
+<p>
+  As briefly outlined in the <a href="https://sammatthewsportfolio.xyz/Articles/portfolio_site">original article involving this site</a>, the free Azure hosting solutions are not very good for even personal sites.
+  The main issue is to do with the initial loading time of the site, regardless of complexity.
+  As a result, I decided to host the site myself which was a somewhat involved but fairly straightforward process.
+  Microsoft has <a href="https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/linux-nginx?view=aspnetcore-3.1">detailed documentation</a> on this which makes the process easier.
+</p>
+
+<h2>Hosting</h2>
+
+<p>
+  I decided to use <a href="https://www.vultr.com/">Vultur</a> as a hosting provider.
+  The reason for this was that I had seen other projects running it before and knew that it would be sufficient for my purposes.
+  Also, the pricing is very cheap for how capable it is.
+  The other advantage to using a server like this is that I can just manage it like I would any normal Linux system as opposed to using a labyrinthine web client.
+  In addition to this, a server like this can easily be configured to host multiple domains at no extra cost on the server end which is great.
+</p>
+
+<h2>Server</h2>
+
+<p>
+  The server is being hosted using <a href="https://www.nginx.com"/>Nginx</a> which is easy to configure and maintain.
+  I also wanted an excuse to learn Nginx as I have had some experience with Apache in the past.
+  For https support, I chose to use <a href ="https://certbot.eff.org/">Certbot</a> to generate the correct Nginx configuration as well as register the domains correctly.
+</p>
+
+<h2>Results</h2>
+
+<p>
+  Using a dedicated custom server has certainly paid off in comparison to the free Azure hosting solutions.
+  This in terms of cost as well as stability, configurability and performance.
+</p>
