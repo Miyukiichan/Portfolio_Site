@@ -1,0 +1,49 @@
+<p>
+  This is a HTML5 and vanilla JS project geared towards fractal tree algorithmic art.
+  What started off as an exorcise in JavaScript quickly turned into a full fledged web application with a myriad of configuration options.
+  This allows the user to create various interesting symmetrical shapes that are far from tree like in substance and can be extremely pretty.
+  The fractal being drawn is a simple binary splitting tree where a branch has two offshoot branches at an angle.
+  The source code for this project can be found <a href="https://github.com/Miyukiichan/Fractal-tree">here</a>.
+</p>
+
+<h2>Functionality</h2>
+
+<p>
+  The user can create, duplicate and delete trees as well as move them around with the mouse.
+  There are also several options that can be changed for each tree independently.
+  These make up the bulk of the power behind this system and mainly came about as a means to remove the hard coded values that made up the ideal tree.
+  Through complex combinations of these settings, it is easy to generate some unique shapes every time, even when just clicking around randomly.
+  The options available are:
+</p>
+
+<ul>
+  <li>Angle between the binary split</li>
+  <li>Recursion depth (maxed out at 11 for performance reasons)</li>
+  <li>Overall size of the tree</li>
+  <li>Line colour</li>
+  <li>Rotation about the centre point</li>
+  <li>Rate of length change (constant multiplier of the length as it continues)</li>
+  <li>Width of the line drawn</li>
+  <li>Rate of angle change (how much the angle between the splits changes as the recursion continues)</li>
+</ul>
+
+<h2>Learning Outcomes</h2>
+
+<p>
+  Through the course of this project, aside from needing to brush up on my trigonometry, I learned various JS techniques as well as how to draw to a HTML5 canvas.
+  This was a good introduction to how object orientation in JS works as well as a good exorcise in JS code structure and reusability.
+  Many of the functions written for convenience in this project are useful everywhere in JS and will definitely be reused in other projects.
+</p>
+
+<p>
+  I also had some difficulty with the styling of the range input sliders.
+  My goal was to update the style dynamically to match the user configurable colour palette but discovered that this would be impossible in the current setup.
+  As a result, the controls were styled independently of the configurable colours too for the sake of consistency.
+</p>
+
+<h2>Conclusion</h2>
+
+<p>
+  Overall, this was a fun and fulfilling endeavour in making an app that is fun to play with (or simply to stare at).
+  It also forms the basis of other fractal based projects in the future such as generic L-System art applications for the web.
+</p>

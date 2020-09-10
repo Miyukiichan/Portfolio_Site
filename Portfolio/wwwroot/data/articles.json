@@ -7,6 +7,13 @@
     "Description": "An Ncurses file manager written in C"
   },
   {
+    "Id": "fractal_tree",
+    "Image": "fractal_tree.png",
+    "ArticleFile": "fractal_tree",
+    "Title": "Fractal Tree Editor",
+    "Description": "Generate and manipulate fractal tree art in the browser"
+  },
+  {
     "Id": "self-hosting-site",
     "Image": "self-hosting-site.png",
     "ArticleFile": "self-hosting-site",
@@ -35,4 +42,3 @@
     "Description": "Customisable non-graphical interface to start/stop activities on mobile robots"
   }
 ]
-
