@@ -1,7 +1,5 @@
 # Portfolio_Site
-Website written in C# to act as a portfolio of projects. Currently being hosted on a Vultur server using Nginx.
-
-Can be located at: https://sammatthewsportfolio.xyz/
+Website written in C# to act as a portfolio of projects
 
 # Todo
 
